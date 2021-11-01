@@ -24,7 +24,6 @@ body {
   font-size: 1.6rem;
   background: var(--neutral-light-gray);
   font-family: 'Karla', sans-serif;
-  height: 100vh;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -153,9 +152,18 @@ main {
   font-size: 1.4rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
+  main {
+    height: auto;
+    margin: 6rem 0;
+  }
   .container {
     width: 90%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .container .primary-section {
+    padding: 2rem;
   }
   .container .secondary-section {
     display: -ms-grid;
@@ -169,12 +177,12 @@ main {
   }
   .container .box-secondary-1 {
     background: var(--primary-cyan);
-    padding: 4rem;
+    padding: 2rem;
     border-radius: 0;
   }
   .container .box-secondary-2 {
     background: var(--primary-cyan-light);
-    padding: 4rem;
+    padding: 2rem;
     border-radius: 0 0 5px 5px;
   }
   .container .info {
